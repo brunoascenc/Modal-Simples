@@ -10,5 +10,10 @@ modalClose.addEventListener('click', function () {
     modalBg.classList.remove('modal-ativar')
 })
 
+window.onclick = function (event) {
+    if (event.target == modalBg) {
+        modalBg.classList.remove('modal-ativar')
+    }
+}
 
 
